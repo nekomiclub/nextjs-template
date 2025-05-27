@@ -17,5 +17,5 @@ export interface ILayoutProps<QUERY = {
   [param: string]: string
 }> {
   params: Promise<QUERY>,
-  children: React.ReactElement
+  children: React.ReactElement<any>
 }
