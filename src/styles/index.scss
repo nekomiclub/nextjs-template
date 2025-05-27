@@ -1,0 +1,97 @@
+$fontColor: #000;
+$fontSize: 16px;
+
+$wrapperMaxWidth: 1700px;
+$wrapperMinWidth: 320px;
+$wrapperSidePadding: 32px;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.wrapper {
+  min-width: calc($wrapperMinWidth + calc($wrapperSidePadding * 2));
+  width: 100%;
+  margin: 0 auto;
+  padding-right: $wrapperSidePadding;
+  padding-left: $wrapperSidePadding;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+li {
+  list-style-type: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+b,
+i,
+a,
+input::placeholder {
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  color: $fontColor;
+  font-size: $fontSize;
+}
+
+b, i, span, a {
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+b {
+  font-weight: 700;
+}
+
+i {
+  font-style: italic;
+}
+
+input,
+button {
+  outline: none;
+}
