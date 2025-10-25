@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IReduxAction } from '~/store'
+
+import { IReduxAction } from '~/store';
 
 /** User local state */
 export interface ITestState {
@@ -9,7 +10,7 @@ export interface ITestState {
 /** Default user state */
 export const testSliceDefaults: ITestState = {
   _: undefined
-}
+};
 
 const testSlice = createSlice({
   name: 'test',
@@ -21,6 +22,6 @@ const testSlice = createSlice({
       }
     }
   }
-})
+});
 
 export default testSlice;

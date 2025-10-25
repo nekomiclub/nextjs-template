@@ -15,4 +15,4 @@ export const Routes: { [key in TRoute]: IRoute } = {
   home: {
     path: () => '/'
   }
-} 
+}; 
