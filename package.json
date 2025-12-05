@@ -1,22 +1,24 @@
 {
-  "name": "nextjs-template",
+  "name": "@nekomiclub/nextjs-template",
   "version": "0.0.0",
-  "author": {
-    "name": "Mykhailo Unniiiverse"
-  },
   "private": true,
+  "author": {
+    "name": "nekomiclub",
+    "url": "https://github.com/nekomiclub"
+  },
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "npx eslint . --fix && next build",
-    "start": "next start",
-    "husky": "npx eslint . --fix && git add . && next build"
+    "dev": "npx next dev --turbopack",
+    "build": "npx eslint . --fix && npx next build",
+    "start": "npx next start",
+    "husky": "npx eslint . --fix && git add . && npx next build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
-    "next": "^16.0.0",
+    "next": "^16.0.7",
     "postcss": "^8.5.6",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "react-redux": "^9.2.0",
     "redux": "^5.0.1"
   },
